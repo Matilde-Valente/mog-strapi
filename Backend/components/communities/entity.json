@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_communities_entities",
+  "info": {
+    "name": "Entity",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "products": {
+      "collection": "products"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "communities",
+  "info": {
+    "name": "Communities",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "type": {
+      "type": "string"
+    },
+    "entity": {
+      "type": "component",
+      "repeatable": true,
+      "component": "communities.entity"
+    }
+  }
+}

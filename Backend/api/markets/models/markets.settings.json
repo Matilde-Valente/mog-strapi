@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "markets",
+  "info": {
+    "name": "Markets",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "products": {
+      "via": "markets",
+      "collection": "products",
+      "dominant": true
+    }
+  }
+}

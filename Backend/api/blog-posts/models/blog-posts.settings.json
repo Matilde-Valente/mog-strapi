@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "blog_posts",
   "info": {
-    "name": "BlogPosts"
+    "name": "BlogPost",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -10,13 +11,13 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "Title": {
+    "title": {
       "type": "string"
     },
-    "Content": {
+    "content": {
       "type": "richtext"
     },
-    "Image": {
+    "image": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
