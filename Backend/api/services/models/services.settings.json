@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "services",
+  "collectionName": "solutions",
   "info": {
-    "name": "Services",
+    "name": "Solutions",
     "description": ""
   },
   "options": {
@@ -10,13 +10,14 @@
     "timestamps": true,
     "draftAndPublish": true
   },
+  "pluginOptions": {},
   "attributes": {
     "title": {
       "type": "string"
     },
     "products": {
-      "via": "services",
       "collection": "products",
+      "via": "solutions",
       "dominant": true
     }
   }

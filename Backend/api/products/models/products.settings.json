@@ -10,21 +10,41 @@
     "timestamps": true,
     "draftAndPublish": true
   },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "details": {
       "type": "component",
       "repeatable": true,
-      "component": "product.characteristics"
+      "component": "product.characteristics",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "family": {
       "type": "enumeration",
       "enum": [
         "mDeck",
         "MAM4PRO"
-      ]
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "images": {
       "collection": "file",
@@ -33,7 +53,12 @@
         "images"
       ],
       "plugin": "upload",
-      "required": false
+      "required": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "datasheet": {
       "collection": "file",
@@ -42,31 +67,66 @@
         "files"
       ],
       "plugin": "upload",
-      "required": false
+      "required": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "shortDescription": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "longDescription": {
-      "type": "text"
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "markets": {
       "collection": "markets",
       "via": "products"
     },
-    "services": {
-      "collection": "services",
-      "via": "products"
+    "solutions": {
+      "via": "products",
+      "collection": "services"
     },
     "explore": {
       "model": "explore",
       "via": "products"
     },
     "partNumber": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "price": {
-      "type": "biginteger"
+      "type": "biginteger",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "productOptions": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "product.product-options"
     }
   }
 }
