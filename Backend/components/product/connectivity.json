@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_product_connectivities",
+  "info": {
+    "name": "Connectivity",
+    "icon": "adjust"
+  },
+  "options": {},
+  "attributes": {
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

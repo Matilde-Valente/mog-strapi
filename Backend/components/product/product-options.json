@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_product_product_options",
+  "info": {
+    "name": "productOptions",
+    "icon": "angle-right"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    },
+    "partNumber": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}
